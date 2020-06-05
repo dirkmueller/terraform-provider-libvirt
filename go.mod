@@ -9,7 +9,7 @@ require (
 	github.com/libvirt/libvirt-go v5.0.0+incompatible
 	github.com/libvirt/libvirt-go-xml v5.0.0+incompatible
 	github.com/mattn/goveralls v0.0.2
-	github.com/mitchellh/packer v1.3.2
+	github.com/mitchellh/packer v1.3.5
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/stretchr/testify v1.5.1
 	github.com/terraform-providers/terraform-provider-ignition v1.2.1
