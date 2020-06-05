@@ -3,7 +3,7 @@ module github.com/dmacvicar/terraform-provider-libvirt
 require (
 	github.com/c4milo/gotoolkit v0.0.0-20170704181456-e37eeabad07e // indirect
 	github.com/davecgh/go-spew v1.1.1
-	github.com/hashicorp/terraform-plugin-sdk v1.4.0
+	github.com/hashicorp/terraform-plugin-sdk v1.13.1
 	github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214 // indirect
 	github.com/hooklift/iso9660 v1.0.0
 	github.com/libvirt/libvirt-go v5.0.0+incompatible
