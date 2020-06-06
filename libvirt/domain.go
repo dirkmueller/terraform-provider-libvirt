@@ -204,7 +204,7 @@ func newDiskForCloudInit(virConn *libvirt.Connect, volumeKey string) (libvirtxml
 		Target: &libvirtxml.DomainDiskTarget{
 			// Last device letter possible with a single IDE controller on i440FX
 			Dev: "hdd",
-			Bus: "ide",
+			Bus: "virtio",
 		},
 		Driver: &libvirtxml.DomainDiskDriver{
 			Name: "qemu",
