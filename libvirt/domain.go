@@ -227,7 +227,7 @@ func newDiskForCloudInit(virConn *libvirt.Connect, volumeKey string) (libvirtxml
 		},
 	}
 
-	disk.ReadOnly = &libvirtxml.DomainFilesystemReadOnly{}
+	disk.ReadOnly = &libvirtxml.DomainDiskReadOnly{}
 
 	return disk, nil
 }
