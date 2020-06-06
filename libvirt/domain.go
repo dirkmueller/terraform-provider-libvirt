@@ -200,7 +200,7 @@ func domainGetIfacesInfo(domain libvirt.Domain, rd *schema.ResourceData) ([]libv
 
 func newDiskForCloudInit(virConn *libvirt.Connect, volumeKey string) (libvirtxml.DomainDisk, error) {
 	disk := libvirtxml.DomainDisk{
-		Device: "cdrom",
+		Device: "disk",
 		Target: &libvirtxml.DomainDiskTarget{
 			// Last device letter possible with a single IDE controller on i440FX
 			Dev: "hdd",
@@ -226,6 +226,8 @@ func newDiskForCloudInit(virConn *libvirt.Connect, volumeKey string) (libvirtxml
 			File: diskVolumeFile,
 		},
 	}
+
+	disk.ReadOnly = &libvirtxml.DomainFilesystemReadOnly{}
 
 	return disk, nil
 }
